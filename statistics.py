@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('bechdel_code.csv')
+data = pd.read_excel('bechdel.xlsx')
 data.dropna(inplace=True)
 
 data2 = data['binary']
