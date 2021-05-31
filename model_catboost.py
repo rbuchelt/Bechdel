@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split, cross_val_score, GridSearc
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from catboost import CatBoostClassifier
 
-data = pd.read_csv('bechdel_code.csv')
+data = pd.read_excel('bechdel.xlsx')
 data.dropna(inplace=True)
 
 features = data.drop(['year', 'imdb','code', 'binary'],1)
